@@ -70,14 +70,14 @@ export function ExperimentsPage() {
   };
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }} className="flex flex-col lg:flex-row gap-6 lg:gap-8 h-auto lg:h-[calc(100vh-6rem)]">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }} className="flex flex-col lg:flex-row gap-6 lg:gap-8 h-auto lg:h-[calc(100vh-6rem)] w-full min-w-0">
       
       {/* Left Sidebar: Experiments List */}
       <div className="w-full lg:w-64 flex-shrink-0 flex flex-col bg-white rounded-xl border border-surface-border overflow-hidden shadow-sm lg:h-full">
         <div className="p-4 border-b border-surface-border bg-surface-base">
           <h3 className="text-[0.6875rem] font-bold text-text-tertiary uppercase tracking-widest">Experiments</h3>
         </div>
-        <div className="lg:flex-1 lg:overflow-y-auto p-2 flex flex-col sm:flex-row lg:flex-col gap-2">
+        <div className="lg:flex-1 lg:overflow-y-auto p-2 flex flex-col sm:flex-row lg:flex-col flex-wrap lg:flex-nowrap gap-2">
           <Link
             to="/experiments/EXP-001"
             className={cn(
@@ -116,7 +116,7 @@ export function ExperimentsPage() {
 
       <div className="flex-1 min-w-0 overflow-y-auto pb-8 pr-2">
       {/* Header */}
-      <div className="flex items-start justify-between mb-8">
+      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-8">
         <div>
           <h1 className="text-display-lg text-text-primary tracking-tight">Experimentation</h1>
           <p className="text-heading text-text-secondary mt-2 font-normal">
@@ -129,10 +129,10 @@ export function ExperimentsPage() {
       </div>
 
       {/* Active Experiment Detail */}
-      <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 2xl:grid-cols-3 gap-8">
         
         {/* Left Col: Spec */}
-        <div className="xl:col-span-2 space-y-8 min-w-0">
+        <div className="2xl:col-span-2 space-y-8 min-w-0">
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -299,7 +299,7 @@ export function ExperimentsPage() {
                     return (
                       <div key={metric} className="pb-6 border-b border-surface-border last:border-0 last:pb-0">
                         <p className="text-body-sm font-semibold text-text-primary mb-4 leading-snug pr-4">{metric}</p>
-                        <div className="flex flex-wrap sm:flex-nowrap items-end justify-between gap-4">
+                        <div className="flex flex-wrap items-end justify-between gap-4">
                           <div className="flex items-center gap-6">
                             <div>
                               <p className="text-[1.125rem] font-medium text-text-tertiary leading-none">{cVal}%</p>

@@ -22,13 +22,13 @@ export function Logo({ variant, collapsed = false, className }: LogoProps) {
     >
       {actualVariant === 'icon' ? (
         <img 
-          src="/logo-full.png" 
+          src={`${import.meta.env.BASE_URL}logo-full.png`}
           alt="PrepDrift" 
           className="w-12 h-12 object-contain"
         />
       ) : (
         <img 
-          src="/logo-symbol.png" 
+          src={`${import.meta.env.BASE_URL}logo-symbol.png`}
           alt="PrepDrift" 
           className="h-[52px] w-auto object-contain object-left"
         />

@@ -15,6 +15,7 @@ try {
 }
 
 export default defineConfig({
+  base: '/PrepDrift/',
   plugins: [react()],
   resolve: {
     alias: {

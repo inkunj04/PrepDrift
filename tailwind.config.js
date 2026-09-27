@@ -11,12 +11,12 @@ export default {
           'border-strong': '#D4D4D8',
         },
         sidebar: {
-          base: '#09090B',
-          hover: '#18181B',
-          active: '#27272A',
-          border: '#27272A',
-          text: '#FAFAFA',
-          muted: '#A1A1AA',
+          base: '#FFFFFF',
+          hover: '#F4F4F5',
+          active: '#E4E4E7',
+          border: '#E4E4E7',
+          text: '#09090B',
+          muted: '#71717A',
         },
         text: {
           primary: '#09090B',
