@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build
+dist/
+build/
+coverage/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs & Test Results
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+test-results/
+playwright-report/
+*.log
+
+# Internal QA / Working Documents (Excluded for Portfolio)
+QA_REPORT.md
+QA_DEFECTS.md
+QA_TEST_MATRIX.md
+UI_UX_POLISH_REPORT.md
+UX_POLISH_CHANGELOG.md
+SETTINGS_UX_REVIEW.md
+LAYOUT_FIX_REPORT.md
+REGRESSION_FIX_REPORT.md
+RECOVERY_UX_REVIEW.md
+CONTENT_REVIEW.md
+FIRST_TIME_VIEWER_CONTENT_REVIEW.md
+SCREENSHOTS.md
+UX_AUDIT.md
+VISUAL_AUDIT.md
