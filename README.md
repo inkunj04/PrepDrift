@@ -101,10 +101,4 @@ While this serves as a portfolio piece, if it were to evolve into a production a
 - **Experimentation Engine Integration:** Wiring the frontend experiments dashboard to a real feature-flagging service like LaunchDarkly or PostHog to control live A/B splits.
 - **Mobile Application:** Building a React Native counterpart, as high-frequency micro-interventions (like a 7-minute recovery session) are highly effective on mobile devices.
 
-## Author
-
-**Kunj**  
-QA Engineer transitioning into Product Management / Data / ML.  
-- [GitHub](https://github.com/inkunj04)
-- [LinkedIn](https://www.linkedin.com/in/kunj) *(Replace with your actual LinkedIn URL if different)*
 
